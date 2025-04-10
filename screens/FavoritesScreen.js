@@ -13,8 +13,8 @@ function FavoritesScreen() {
 
   if (favoriteMeals.length > 0) {
     return (
-      <View>
-        <Text>No favorite meals yet!</Text>
+      <View style={styles.rootContainer}>
+        <Text style={styles.text}>You have no favorite meals yet!</Text>
       </View>
     );
   }
@@ -24,4 +24,15 @@ function FavoritesScreen() {
 
 export default FavoritesScreen;
 
-const style = StyleSheet.create({});
+const styles = StyleSheet.create({
+  rootContainer: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  text: {
+    fontSize: 18,
+    fontWeight: "bold",
+    color: "white",
+  },
+});
